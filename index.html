@@ -1,0 +1,2771 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://impact-initiatives.friendlyanalytics.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '8']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics GLOBAL ACCOUNT -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31805413-49"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-31805413-49');
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+// Creates an adblock detection plugin.
+ga('provide', 'adblockTracker', function(tracker, opts) {
+  var ad = document.createElement('ins');
+  ad.className = 'AdSense';
+  ad.style.display = 'block';
+  ad.style.position = 'absolute';
+  ad.style.top = '-1px';
+  ad.style.height = '1px';
+  document.body.appendChild(ad);
+  tracker.set('dimension' + opts.dimensionIndex, !ad.clientHeight);
+  document.body.removeChild(ad);
+});
+
+// TODO: Replace UA-XXXXX-Y with you tracking ID.
+ga('create', 'UA-31805413-49', 'auto');
+ga('require', 'adblockTracker', {dimensionIndex: 1});
+ga('send', 'pageview');
+</script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZW9D3DJ541"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZW9D3DJ541');
+</script>
+
+
+
+    <html lang="es"></html>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    <script type="text/javascript">
+        document.title = "Movilidad humana Perú-Ecuador | IMPACT-REACH";
+    </script>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8b91f3a83de40f8bb44c928e7cfcfd4b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumpopup {
+                            font-family: arial; font-size: 10px; padding: 2px;
+                        }
+                       .foliumpopup table{
+                            margin: auto;
+                        }
+                        .foliumpopup tr{
+                            text-align: left;
+                        }
+                        .foliumpopup th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+        font-family: Arial;
+        font-size: 11px;
+        padding: 5px;
+    
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-tag-filter-button/src/leaflet-tag-filter-button.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-tag-filter-button/src/leaflet-tag-filter-button.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-ripple-effect@1.0.5/dist/ripple.min.css"/>
+    
+            <style>
+                .easy-button-button {
+                  display: block !important;
+                }
+
+                .tag-filter-tags-container {
+                  left: 30px;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-groupedlayercontrol/0.6.1/leaflet.groupedlayercontrol.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-groupedlayercontrol/0.6.1/leaflet.groupedlayercontrol.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8b91f3a83de40f8bb44c928e7cfcfd4b" ></div>
+        
+    
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <style type='text/css'>
+    .my-legend1 {
+      display: flex; /* Agregar display flex */
+      flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias líneas */
+      align-items: center; /* Centrar verticalmente */
+    }
+    .map-logo {
+      width: 145px; /* ajustar el ancho de la imagen */
+      height: 31.886px; /* ajustar el alto de la imagen */
+      margin-right: 4px; /* agregar espacio entre la imagen y el título */
+      margin-left: 0px;
+    }
+    .map-title {
+      font-weight: bold;
+      font-size: 90%;
+    }
+    .map-header {
+      font-size: 70%;
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( "#maptitle1" ).draggable({
+      start: function (event, ui) {
+        $(this).css({
+          right: "auto",
+          top: "auto",
+          bottom: "auto"
+        });
+      }
+    });
+
+  });
+  </script>
+</head>
+<body>
+
+<div id='maptitle1' class='maptitle1'
+    style='position: absolute; z-index:9999; background-color:rgba(255, 255, 255, 0.75);
+     border-radius:2px; padding: 4px; font-size:14px; left: 50px; top: 10px;'>
+  <div class='my-legend1'>
+    <img src='https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/logo_reach_vector.svg' class='map-logo' />
+    <div style='display: flex; flex-direction: column;'>
+      <div class='map-title'>Principales rutas de movilidad humana en Perú y Ecuador</div>
+      <div class='map-header'>PROYECTO CALP | PER-ECU | IMPACT-REACH 2024</div>
+    </div>
+  </div>
+</div>
+
+    
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style type='text/css'>
+    .my-legend1 {
+      display: flex; /* Agregar display flex */
+      flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias líneas */
+      align-items: center; /* Centrar verticalmente */
+    }
+    .map-info-title {
+      font-weight: bold;
+      font-size: 95%;
+      text-align: center; /* Centrar texto */
+    }
+    .map-info-text {
+      font-size: 93%;
+      max-width: 375px; /* Establecer ancho máximo */
+      max-height: 150px;
+      text-align: justify; /* Justificar texto */
+      white-space: pre-wrap;
+      overflow-y: auto; /* Agregar barra de scrolling vertical */
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( "#mapinfo" ).draggable({
+      start: function (event, ui) {
+        $(this).css({
+          right: "auto",
+          top: "auto",
+          bottom: "auto"
+        });
+      }
+    });
+    $( "#mapinfo" ).hide();
+  });
+  </script>
+</head>
+<body>
+
+<div id='mapinfo' class='mapinfo'
+    style='position: absolute; z-index:9999; background-color:rgba(255, 255, 255, 0.75);
+     border-radius:0px; padding: 6px; font-size:14px; left: 10px; top: 217px;'>
+  <div class='my-legend1'>
+    <div style='display: flex; flex-direction: column;'>
+      <div class='map-info-title'>Información del mapa</div>
+      <div class='map-info-text'>Esta herramienta tiene como objetivo visualizar las principales rutas de tránsito de personas en movimiento en Ecuador y Perú, así como destacar las necesidades y riesgos de protección más relevantes, identificados por informantes clave de organizaciones humanitarias locales e internacionales y representantes de entidades gubernamentales que participaron en grupos focales de discusión y en mapeos participativos.
+
+Las rutas identificadas están marcadas con una línea roja. Al hacer clic en los números, se pueden visualizar los íconos que representan las necesidades identificadas. La capa de Departamento / Provincia ilustra los niveles de riesgo a los que están expuestas las personas en tránsito. Puede hacer clic en la capa temática para consultar los detalles de los riesgos asociados.
+
+Los grupos focales y los mapeos participativos se llevaron a cabo los días 4 y 5 de abril en Tumbes, Perú, y el 17 de abril en Quito, Ecuador. El estudio se basa en métodos cualitativos, que permiten una comprensión profunda de las perspectivas de los participantes. Sin embargo, es importante reconocer que este enfoque tiene limitaciones, como la subjetividad de las respuestas y el sesgo de percepción, por lo que los resultados del estudio deben considerarse indicativos.</div>
+    </div>
+  </div>
+</div>
+
+    
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( "#maplegend" ).draggable({
+                    start: function (event, ui) {
+                        $(this).css({
+                            right: "auto",
+                            top: "auto",
+                            bottom: "auto"
+                        });
+                    }
+                });
+
+});
+
+  </script>
+</head>
+<body>
+
+<div id='maplegend' class='maplegend'
+    style='position: absolute; z-index:9999; background-color:rgba(255, 255, 255, 0.75);
+     border-radius:2px; padding: 5px; font-size:14px; left: 5px; bottom: 40px;'>
+  <div class='my-legend'>
+    <div class='legend-title'>Leyenda</div>
+    <div class='legend-header'>Nivel de riesgo (Admin 1):</div>
+    <div class='legend-container'>
+      <div class='legend-left'>
+        <div class='legend-scale'>
+          <ul class='legend-labels'>
+            <li><span style='background:#DCE9F0;'></span>Bajo [2]</li>
+            <li><span style='background:#B3D4E7;'></span>Medio [6]</li>
+            <li><span style='background:#7296BC;'></span>Alto [3]</li>
+          </ul>
+        </div>
+        <div class='legend-vertical'>
+          <ul class='legend-vertical-labels'>
+            <li><span style='background:#A4303F;'></span>Ruta identificada</li>
+            <li><u>Necesidades de la ruta:</u></li>
+            <li><span><img src='https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_agua.svg'  /></span>Agua, saneamiento e higiene</li>
+            <li><span><img src='https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alimento.svg'  /></span>Alimentos</li>
+            <li><span><img src='https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_medio_vida.svg'  /></span>Medios de vida e integración</li>
+          </ul>
+        </div>
+      </div>
+      <div class='legend-right'>
+        <div class='legend-vertical-right'>
+          <ul class='legend-vertical-labels'>
+            <li><span><img src='https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alojamiento.svg'  /></span>Alojamiento</li>
+            <li><span><img src='https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_no_alimentario.svg'  /></span>Artículos no alimentarios</li>
+            <li><span><img src='https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_proteccion.svg'  /></span>Protección y regularización</li>
+            <li><span><img src='https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_salud.svg'  /></span>Salud</li>
+            <li><span><img src='https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_transporte.svg'  /></span>Transporte</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type='text/css'>
+  .my-legend .legend-title {
+    text-align: center;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 90%;
+  }
+  .my-legend .legend-header {
+    text-align: left;
+    margin-bottom: 1px;
+    font-size: 85%;
+  }
+  .my-legend .legend-scale ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+  }
+  .my-legend .legend-scale ul li {
+    display: block;
+    float: left;
+    width: 49px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 85%;
+    list-style: none;
+  }
+  .my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 15px;
+    width: 47px;
+  }
+    .my-legend .legend-vertical ul {
+    margin: 0;
+    margin-bottom: 2px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0;
+    float: left;
+    list-style: none;
+  }
+  .my-legend .legend-vertical ul li {
+    font-size: 85%;
+    list-style: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    line-height: 20px;
+    margin-bottom: 2px;
+  }
+  .my-legend ul.legend-vertical-labels li span {
+    display: block;
+    float: right;
+    height: 20px;
+    width: 20px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+
+  .my-legend .legend-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .my-legend .legend-left {
+    flex: 1;
+    margin-right: 0px;
+  }
+
+  .my-legend .legend-right {
+    flex: 1;
+  }
+
+  .my-legend .legend-vertical-right {
+    margin-left: 0;
+  }
+
+  .my-legend .legend-vertical-right ul li {
+    font-size: 85%;
+    list-style: none;
+    margin-left: 2px;
+    margin-right: 2px;
+    line-height: 20px;
+    margin-bottom: 2px;
+  }
+
+</style>
+</body>
+<script>
+    
+    
+            var map_8b91f3a83de40f8bb44c928e7cfcfd4b = L.map(
+                "map_8b91f3a83de40f8bb44c928e7cfcfd4b",
+                {
+                    center: [-6.5, -80.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+
+            
+
+        
+    
+            var tile_layer_de12234e26f8158b45e4be249cdafaf7 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "CartoDB \u0026copy; | Autor: \u003ca href=\"https://www.impact-initiatives.org/where-we-work/colombia/\" target=\"_blank\"\u003eREACH-COL\u003c/a\u003e", "detectRetina": false, "maxZoom": 13, "minZoom": 7, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_de12234e26f8158b45e4be249cdafaf7.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            var tile_layer_abef4fcb364b16c791f7ff1df1fc14bd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "OSM \u0026copy; | Autor: \u003ca href=\"https://www.impact-initiatives.org/where-we-work/colombia/\" target=\"_blank\"\u003eREACH-COL\u003c/a\u003e", "detectRetina": false, "maxZoom": 13, "minZoom": 6, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            var tile_layer_252775bfaeab4229a275c7cbc5940e97 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Esri \u0026copy; | Autor: \u003ca href=\"https://www.impact-initiatives.org/where-we-work/colombia/\" target=\"_blank\"\u003eREACH-COL\u003c/a\u003e", "detectRetina": false, "maxZoom": 13, "minZoom": 7, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            var tile_layer_0087f04c550b28599ba8dc8a263cf6a7 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google \u0026copy; | Autor: \u003ca href=\"https://www.impact-initiatives.org/where-we-work/colombia/\" target=\"_blank\"\u003eREACH-COL\u003c/a\u003e", "detectRetina": false, "maxZoom": 13, "minZoom": 7, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            var tile_layer_e43d7eea97944c62015c372e7ea58d5b = L.tileLayer(
+                "",
+                {"attribution": "Autor: \u003ca href=\"https://www.impact-initiatives.org/where-we-work/colombia/\" target=\"_blank\"\u003eREACH-COL\u003c/a\u003e", "detectRetina": false, "maxZoom": 13, "minZoom": 7, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            var feature_group_3352c6df4d4aaee1283045f8a3cd6f4e = L.featureGroup(
+                {}
+            );
+        
+    
+        function geo_json_b25acba5bd5aa7751a32cef506ba6104_styler(feature) {
+            switch(feature.properties.provincia) {
+                case "Carchi": case "El Oro": case "Tumbes": 
+                    return {"color": "black", "fill": true, "fillColor": "#08519c", "fillOpacity": 0.5, "weight": 0.2};
+                case "Guayas": case "Manabi": case "Pichincha": case "Santo Domingo de los Tsachilas": case "La Libertad": case "Piura": 
+                    return {"color": "black", "fill": true, "fillColor": "#6baed6", "fillOpacity": 0.5, "weight": 0.2};
+                default:
+                    return {"color": "black", "fill": true, "fillColor": "#bdd7e7", "fillOpacity": 0.5, "weight": 0.2};
+            }
+        }
+        function geo_json_b25acba5bd5aa7751a32cef506ba6104_highlighter(feature) {
+            switch(feature.properties.provincia) {
+                default:
+                    return {"fillColor": "#fff998"};
+            }
+        }
+
+        function geo_json_b25acba5bd5aa7751a32cef506ba6104_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        if (!e.target.isPopupOpen())
+                            geo_json_b25acba5bd5aa7751a32cef506ba6104.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_b25acba5bd5aa7751a32cef506ba6104_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+                popupopen: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_b25acba5bd5aa7751a32cef506ba6104_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                        e.target.bindPopup(e.popup)
+                    }
+                },
+                popupclose: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        geo_json_b25acba5bd5aa7751a32cef506ba6104.resetStyle(e.target);
+                        e.target.unbindPopup()
+                    }
+                },
+            });
+        };
+        var geo_json_b25acba5bd5aa7751a32cef506ba6104 = L.geoJson(null, {
+                smoothFactor: 1,
+                onEachFeature: geo_json_b25acba5bd5aa7751a32cef506ba6104_onEachFeature,
+            
+                style: geo_json_b25acba5bd5aa7751a32cef506ba6104_styler,
+        });
+
+        function geo_json_b25acba5bd5aa7751a32cef506ba6104_add (data) {
+            geo_json_b25acba5bd5aa7751a32cef506ba6104
+                .addData(data);
+        }
+            $.ajax("https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/data/calp_admin1.geojson", {dataType: 'json', async: false})
+                .done(geo_json_b25acba5bd5aa7751a32cef506ba6104_add);
+
+        
+    
+    geo_json_b25acba5bd5aa7751a32cef506ba6104.bindPopup(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["pais", "provincia", "coropleta_txt", "mapa2", "lista_riesgos"];
+    let aliases = ["Pa\u00eds:", "Nivel admin 1:", "Nivel riesgo:", "Riesgos identificados:", "Tipo de riesgo:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i].toLocaleString()}</th>
+            
+            <td>${handleObject(layer.feature.properties[v]).toLocaleString()}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumpopup", "maxWidth": 250});
+                     
+    
+            geo_json_b25acba5bd5aa7751a32cef506ba6104.addTo(feature_group_3352c6df4d4aaee1283045f8a3cd6f4e);
+        
+    
+            feature_group_3352c6df4d4aaee1283045f8a3cd6f4e.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+        function geo_json_912be736a75ae022108c3776c0183e2c_styler(feature) {
+            switch(feature.properties.id) {
+                case 1: case 22: case 24: case 31: case 34: case 40: case 49: case 51: case 73: case 75: case 81: case 82: case 98: case 112: case 113: case 114: case 122: case 124: 
+                    return {"color": "#A4303F", "fillcolor": "#A4303F", "tags": ["B:Ibarra-Quito"], "weight": 4};
+                case 2: case 13: case 15: case 18: case 26: case 28: case 29: case 30: case 35: case 36: case 44: case 56: case 57: case 61: case 64: case 71: case 86: case 87: case 93: case 94: case 99: case 102: case 121: case 133: case 137: 
+                    return {"color": "#A4303F", "fillcolor": "#A4303F", "tags": ["E:Huaquillas-Guayaquil"], "weight": 4};
+                case 3: case 4: case 6: case 9: case 10: case 21: case 52: case 69: case 95: case 96: case 97: case 104: case 108: case 119: case 127: case 130: case 139: 
+                    return {"color": "#A4303F", "fillcolor": "#A4303F", "tags": ["J:Chiclayo-Trujillo"], "weight": 4};
+                case 5: case 14: case 32: case 38: case 47: case 60: case 62: case 63: case 77: case 80: case 84: case 101: case 109: case 131: case 138: case 142: 
+                    return {"color": "#A4303F", "fillcolor": "#A4303F", "tags": ["I:Piura-Chiclayo"], "weight": 4};
+                case 7: case 12: case 16: case 23: case 25: case 33: case 48: case 65: case 66: case 67: case 68: case 72: case 83: case 88: case 90: case 116: case 123: 
+                    return {"color": "#A4303F", "fillcolor": "#A4303F", "tags": ["A:Tulc\u00e1n-Ibarra"], "weight": 4};
+                case 8: case 11: case 20: case 37: case 39: case 43: case 45: case 46: case 50: case 53: case 55: case 58: case 59: case 74: case 79: case 85: case 89: case 91: case 106: case 107: case 111: case 115: case 117: case 126: case 128: case 129: case 132: case 134: case 135: case 136: case 141: 
+                    return {"color": "#A4303F", "fillcolor": "#A4303F", "tags": ["C:Quito-Manta"], "weight": 4};
+                case 27: case 76: case 92: 
+                    return {"color": "#A4303F", "fillcolor": "#A4303F", "tags": ["G:Aguas Verdes-Tumbes"], "weight": 4};
+                case 100: case 105: case 143: 
+                    return {"color": "#A4303F", "fillcolor": "#A4303F", "tags": ["H:Tumbes-Piura"], "weight": 4};
+                case 118: 
+                    return {"color": "#A4303F", "fillcolor": "#A4303F", "tags": ["F:Guayaquil"], "weight": 4};
+                default:
+                    return {"color": "#A4303F", "fillcolor": "#A4303F", "tags": ["D:Manta"], "weight": 4};
+            }
+        }
+
+        function geo_json_912be736a75ae022108c3776c0183e2c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_912be736a75ae022108c3776c0183e2c = L.geoJson(null, {
+                smoothFactor: 1,
+                onEachFeature: geo_json_912be736a75ae022108c3776c0183e2c_onEachFeature,
+            
+                style: geo_json_912be736a75ae022108c3776c0183e2c_styler,
+                localize: true,
+        });
+
+        function geo_json_912be736a75ae022108c3776c0183e2c_add (data) {
+            geo_json_912be736a75ae022108c3776c0183e2c
+                .addData(data);
+        }
+            $.ajax("https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/data/calp_rutas.geojson", {dataType: 'json', async: false})
+                .done(geo_json_912be736a75ae022108c3776c0183e2c_add);
+
+        
+    
+    geo_json_912be736a75ae022108c3776c0183e2c.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["pais", "provincia", "municipio", "nom_ruta", "nombre", "tipo_via", "extension"];
+    let aliases = ["Pa\u00eds:", "Nivel admin 1:", "Nivel admin 2:", "Tramo ruta:", "Nombre v\u00eda:", "Tipo v\u00eda:", "Tramo (km):"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "showCoverageOnHover": false, "sticky": true});
+                     
+    
+            geo_json_912be736a75ae022108c3776c0183e2c.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            var feature_group_1bffc180e658f1a3d3849eb1ef19118c = L.featureGroup(
+                {"showCoverageOnHover": false}
+            );
+        
+    
+            var marker_0d2a207c7fac66ada0b1713b2521d771 = L.marker(
+                [0.814105499669097, -77.66414909970115],
+                {"embed": false}
+            ).addTo(feature_group_1bffc180e658f1a3d3849eb1ef19118c);
+        
+    
+        var custom_icon_d6b99ea992dd6205beadd719cc01e6d6 = L.icon({"iconSize": [25, 25], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_paso_fronterizo.svg"});
+        marker_0d2a207c7fac66ada0b1713b2521d771.setIcon(custom_icon_d6b99ea992dd6205beadd719cc01e6d6);
+        
+    
+            marker_0d2a207c7fac66ada0b1713b2521d771.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>Paso fronterizo:</b> Puente De Rumichaca<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f20e3da275725f04417aff8752a6d998 = L.marker(
+                [-4.392645400165065, -79.96400700042267],
+                {"embed": false}
+            ).addTo(feature_group_1bffc180e658f1a3d3849eb1ef19118c);
+        
+    
+        var custom_icon_ed01ca63ac2f5657899108bb9b568e61 = L.icon({"iconSize": [25, 25], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_paso_fronterizo.svg"});
+        marker_f20e3da275725f04417aff8752a6d998.setIcon(custom_icon_ed01ca63ac2f5657899108bb9b568e61);
+        
+    
+            marker_f20e3da275725f04417aff8752a6d998.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>Paso fronterizo:</b> Puesto Senae - Aduana Del Ecuador<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_060963bb5bf0f5b3b27ef1bcf3f61a40 = L.marker(
+                [-3.481409599673214, -80.24339049967176],
+                {"embed": false}
+            ).addTo(feature_group_1bffc180e658f1a3d3849eb1ef19118c);
+        
+    
+        var custom_icon_244f107a992c1274d43065732392483a = L.icon({"iconSize": [25, 25], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_paso_fronterizo.svg"});
+        marker_060963bb5bf0f5b3b27ef1bcf3f61a40.setIcon(custom_icon_244f107a992c1274d43065732392483a);
+        
+    
+            marker_060963bb5bf0f5b3b27ef1bcf3f61a40.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>Paso fronterizo:</b> Puente Internacional Perú - Ecuador<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_824001a37866b268eec69a643371224b = L.marker(
+                [-4.477067999988151, -80.39606860038555],
+                {"embed": false}
+            ).addTo(feature_group_1bffc180e658f1a3d3849eb1ef19118c);
+        
+    
+        var custom_icon_29371f24e41a811082a7c918fb352ba1 = L.icon({"iconSize": [25, 25], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_paso_fronterizo.svg"});
+        marker_824001a37866b268eec69a643371224b.setIcon(custom_icon_29371f24e41a811082a7c918fb352ba1);
+        
+    
+            marker_824001a37866b268eec69a643371224b.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>Paso fronterizo:</b> Puente Internacional Perú - Ecuador<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_1bffc180e658f1a3d3849eb1ef19118c.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            var marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3 = L.markerClusterGroup(
+                {"embed": false, "maxClusterRadius": 30, "showCoverageOnHover": false}
+            );
+        
+    
+            var marker_f89b8d844d72fa50bb92238a41998b01 = L.marker(
+                [0.348523732823907, -78.13327968163645],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_a138a724445707b346aaf028de397b16 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_proteccion.svg"});
+        marker_f89b8d844d72fa50bb92238a41998b01.setIcon(custom_icon_a138a724445707b346aaf028de397b16);
+        
+    
+            marker_f89b8d844d72fa50bb92238a41998b01.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Imbabura<br>
+                <b>Municipio:</b> Ibarra<br>
+                <b>Necesidad:</b> Protección, asesoría y regularización<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9975e5e0c67eff0224e50407a24e9cf = L.marker(
+                [0.355750688130165, -78.13328209682959],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_293ec915fa5f672c6a7951d4c91950f3 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_medio_vida.svg"});
+        marker_c9975e5e0c67eff0224e50407a24e9cf.setIcon(custom_icon_293ec915fa5f672c6a7951d4c91950f3);
+        
+    
+            marker_c9975e5e0c67eff0224e50407a24e9cf.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Imbabura<br>
+                <b>Municipio:</b> Ibarra<br>
+                <b>Necesidad:</b> Medios de vida e integración<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_feae2f8b3678df6b985187778ec6c8c6 = L.marker(
+                [0.341296777389899, -78.13327731601363],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_28ef23edce2a236717a1a82b27a453c8 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_salud.svg"});
+        marker_feae2f8b3678df6b985187778ec6c8c6.setIcon(custom_icon_28ef23edce2a236717a1a82b27a453c8);
+        
+    
+            marker_feae2f8b3678df6b985187778ec6c8c6.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Imbabura<br>
+                <b>Municipio:</b> Ibarra<br>
+                <b>Necesidad:</b> Salud<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7777886338d5c115cc76cadcc595d8c9 = L.marker(
+                [0.355748228952912, -78.14046078751109],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_43fc2a68a501b657e2b2c1705ad59a0f = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_agua.svg"});
+        marker_7777886338d5c115cc76cadcc595d8c9.setIcon(custom_icon_43fc2a68a501b657e2b2c1705ad59a0f);
+        
+    
+            marker_7777886338d5c115cc76cadcc595d8c9.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Imbabura<br>
+                <b>Municipio:</b> Ibarra<br>
+                <b>Necesidad:</b> Agua, saneamiento e higiene<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22dcfc923ece638ef2b4e660a73d1a27 = L.marker(
+                [0.341294418129677, -78.1404559957856],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_c4cf7a448bec5f9fc0f67e3e12a07b87 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alojamiento.svg"});
+        marker_22dcfc923ece638ef2b4e660a73d1a27.setIcon(custom_icon_c4cf7a448bec5f9fc0f67e3e12a07b87);
+        
+    
+            marker_22dcfc923ece638ef2b4e660a73d1a27.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Imbabura<br>
+                <b>Municipio:</b> Ibarra<br>
+                <b>Necesidad:</b> Alojamiento<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b77710547d580f5fdeb8041a2f57ada = L.marker(
+                [0.348521323605206, -78.14045836680663],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_4ada247b6fae7a757f5588e38139a5b5 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alimento.svg"});
+        marker_5b77710547d580f5fdeb8041a2f57ada.setIcon(custom_icon_4ada247b6fae7a757f5588e38139a5b5);
+        
+    
+            marker_5b77710547d580f5fdeb8041a2f57ada.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Imbabura<br>
+                <b>Municipio:</b> Ibarra<br>
+                <b>Necesidad:</b> Alimentos<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_267599d65be4d22b5aef3bac8cd6a134 = L.marker(
+                [0.804754189829462, -77.7244050991098],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_bae3ba92dfe92339743ee9dff256fa14 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_agua.svg"});
+        marker_267599d65be4d22b5aef3bac8cd6a134.setIcon(custom_icon_bae3ba92dfe92339743ee9dff256fa14);
+        
+    
+            marker_267599d65be4d22b5aef3bac8cd6a134.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Carchi<br>
+                <b>Municipio:</b> Tulcán<br>
+                <b>Necesidad:</b> Agua, saneamiento e higiene<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83fbcdf4f4dadc42192ea5ad66f21007 = L.marker(
+                [0.804759015445359, -77.71722315667246],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_ba797785dafad3d1635fbfa96ede9e6d = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alimento.svg"});
+        marker_83fbcdf4f4dadc42192ea5ad66f21007.setIcon(custom_icon_ba797785dafad3d1635fbfa96ede9e6d);
+        
+    
+            marker_83fbcdf4f4dadc42192ea5ad66f21007.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Carchi<br>
+                <b>Municipio:</b> Tulcán<br>
+                <b>Necesidad:</b> Alimentos<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94a9d24ad1a3c3a76d674dd9dc4d5f00 = L.marker(
+                [0.819213390632487, -77.72441478557974],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_a7c41812f2b1f8550730392fd33d5b19 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alojamiento.svg"});
+        marker_94a9d24ad1a3c3a76d674dd9dc4d5f00.setIcon(custom_icon_a7c41812f2b1f8550730392fd33d5b19);
+        
+    
+            marker_94a9d24ad1a3c3a76d674dd9dc4d5f00.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Carchi<br>
+                <b>Municipio:</b> Tulcán<br>
+                <b>Necesidad:</b> Alojamiento<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6300d55c3de456474e9f663349d86b65 = L.marker(
+                [0.811983790375216, -77.72440992077644],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_ecba01735953fa70e41c453d4b938624 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_no_alimentario.svg"});
+        marker_6300d55c3de456474e9f663349d86b65.setIcon(custom_icon_ecba01735953fa70e41c453d4b938624);
+        
+    
+            marker_6300d55c3de456474e9f663349d86b65.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Carchi<br>
+                <b>Municipio:</b> Tulcán<br>
+                <b>Necesidad:</b> Artículos no alimentarios<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3459ffcf27eb421e6a4d378174239c1 = L.marker(
+                [0.819218302962561, -77.71723281768413],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_2ea21b13b88d73f5dbb6ea23babefd36 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_medio_vida.svg"});
+        marker_c3459ffcf27eb421e6a4d378174239c1.setIcon(custom_icon_2ea21b13b88d73f5dbb6ea23babefd36);
+        
+    
+            marker_c3459ffcf27eb421e6a4d378174239c1.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Carchi<br>
+                <b>Municipio:</b> Tulcán<br>
+                <b>Necesidad:</b> Medios de vida e integración<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7480d93a357e8bb3cb303f8a3de57802 = L.marker(
+                [0.811988659348128, -77.71722796566664],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_306c3fe13d7d20a99fb0016814643e47 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_proteccion.svg"});
+        marker_7480d93a357e8bb3cb303f8a3de57802.setIcon(custom_icon_306c3fe13d7d20a99fb0016814643e47);
+        
+    
+            marker_7480d93a357e8bb3cb303f8a3de57802.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Carchi<br>
+                <b>Municipio:</b> Tulcán<br>
+                <b>Necesidad:</b> Protección, asesoría y regularización<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d97796b4801066ea1a4dd131d4d2879 = L.marker(
+                [0.819223202364712, -77.71005080676484],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_c590a2c22a3306f34fe3e5111ee2b36a = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_salud.svg"});
+        marker_4d97796b4801066ea1a4dd131d4d2879.setIcon(custom_icon_c590a2c22a3306f34fe3e5111ee2b36a);
+        
+    
+            marker_4d97796b4801066ea1a4dd131d4d2879.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Carchi<br>
+                <b>Municipio:</b> Tulcán<br>
+                <b>Necesidad:</b> Salud<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f10ba9048e39c4c07e0a38a835ae5bff = L.marker(
+                [0.811993515507221, -77.71004596753355],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_260a2f0a6942ecf65ad4b78cb556550b = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_transporte.svg"});
+        marker_f10ba9048e39c4c07e0a38a835ae5bff.setIcon(custom_icon_260a2f0a6942ecf65ad4b78cb556550b);
+        
+    
+            marker_f10ba9048e39c4c07e0a38a835ae5bff.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Carchi<br>
+                <b>Municipio:</b> Tulcán<br>
+                <b>Necesidad:</b> Transporte<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3da9ba23da382549210e13a023e853f8 = L.marker(
+                [-0.191997568256638, -78.4842600904288],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_59e0ab872cde513ea5342763d010adc7 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_proteccion.svg"});
+        marker_3da9ba23da382549210e13a023e853f8.setIcon(custom_icon_59e0ab872cde513ea5342763d010adc7);
+        
+    
+            marker_3da9ba23da382549210e13a023e853f8.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Pichincha<br>
+                <b>Municipio:</b> Quito<br>
+                <b>Necesidad:</b> Protección, asesoría y regularización<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a893dd76c2c05f0c15f88f0282ed22a = L.marker(
+                [-0.184785349935754, -78.47707035077602],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_cf26eccef8560d39e76b2c1993e469aa = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_medio_vida.svg"});
+        marker_4a893dd76c2c05f0c15f88f0282ed22a.setIcon(custom_icon_cf26eccef8560d39e76b2c1993e469aa);
+        
+    
+            marker_4a893dd76c2c05f0c15f88f0282ed22a.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Pichincha<br>
+                <b>Municipio:</b> Quito<br>
+                <b>Necesidad:</b> Medios de vida e integración<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e00348e091fa5b97890429e6d8bd7e1 = L.marker(
+                [-0.177545883100482, -78.49142262655404],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_7358d10ce70801a0b2f6151e9e09121b = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_no_alimentario.svg"});
+        marker_4e00348e091fa5b97890429e6d8bd7e1.setIcon(custom_icon_7358d10ce70801a0b2f6151e9e09121b);
+        
+    
+            marker_4e00348e091fa5b97890429e6d8bd7e1.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Pichincha<br>
+                <b>Municipio:</b> Quito<br>
+                <b>Necesidad:</b> Artículos no alimentarios<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f522986d1f99c5529db421cd3674b96b = L.marker(
+                [-0.184783930326172, -78.48425865589651],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_bd5bee04021fda3207a02c3e27813df8 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_transporte.svg"});
+        marker_f522986d1f99c5529db421cd3674b96b.setIcon(custom_icon_bd5bee04021fda3207a02c3e27813df8);
+        
+    
+            marker_f522986d1f99c5529db421cd3674b96b.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Pichincha<br>
+                <b>Municipio:</b> Quito<br>
+                <b>Necesidad:</b> Transporte<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6cb06d49532a6dc6022f4254cfbbe45 = L.marker(
+                [-0.177547245559289, -78.48425727197494],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_e4724b19d3cf58c16dce389ea728862d = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_salud.svg"});
+        marker_d6cb06d49532a6dc6022f4254cfbbe45.setIcon(custom_icon_e4724b19d3cf58c16dce389ea728862d);
+        
+    
+            marker_d6cb06d49532a6dc6022f4254cfbbe45.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Pichincha<br>
+                <b>Municipio:</b> Quito<br>
+                <b>Necesidad:</b> Salud<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89328ec5355b7145c2170779a61ba263 = L.marker(
+                [-0.192019141498022, -78.49142545545611],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_d7edc11a6e3228b7b0538032989f174b = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alojamiento.svg"});
+        marker_89328ec5355b7145c2170779a61ba263.setIcon(custom_icon_d7edc11a6e3228b7b0538032989f174b);
+        
+    
+            marker_89328ec5355b7145c2170779a61ba263.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Pichincha<br>
+                <b>Municipio:</b> Quito<br>
+                <b>Necesidad:</b> Alojamiento<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9191a83138ae29e3ac89c62c60874838 = L.marker(
+                [-0.184782512334264, -78.49142401330755],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_7735e152ae1c10f57bfcba05284d69c3 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alimento.svg"});
+        marker_9191a83138ae29e3ac89c62c60874838.setIcon(custom_icon_7735e152ae1c10f57bfcba05284d69c3);
+        
+    
+            marker_9191a83138ae29e3ac89c62c60874838.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Pichincha<br>
+                <b>Municipio:</b> Quito<br>
+                <b>Necesidad:</b> Alimentos<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65b5caecda25f066f78d13b80741d0e9 = L.marker(
+                [-0.177548609572415, -78.47706896969554],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_aa1962f9c517d72f9f5fb63e722161da = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_agua.svg"});
+        marker_65b5caecda25f066f78d13b80741d0e9.setIcon(custom_icon_aa1962f9c517d72f9f5fb63e722161da);
+        
+    
+            marker_65b5caecda25f066f78d13b80741d0e9.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Pichincha<br>
+                <b>Municipio:</b> Quito<br>
+                <b>Necesidad:</b> Agua, saneamiento e higiene<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a90a2600ed56675c3ac3e1308cb2047e = L.marker(
+                [-0.234557894501295, -79.17758702075808],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_4a73479f9fd5f47f7d9e61fca1f21ce5 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_proteccion.svg"});
+        marker_a90a2600ed56675c3ac3e1308cb2047e.setIcon(custom_icon_4a73479f9fd5f47f7d9e61fca1f21ce5);
+        
+    
+            marker_a90a2600ed56675c3ac3e1308cb2047e.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Santo Domingo de los Tsachilas<br>
+                <b>Municipio:</b> Santo Domingo<br>
+                <b>Necesidad:</b> Protección, asesoría y regularización<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06557a23b3a3d764283374552e0ec0be = L.marker(
+                [-0.241774156940683, -79.18475939550284],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_3a7455f08469bde8ba7b8da5c5f85290 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_no_alimentario.svg"});
+        marker_06557a23b3a3d764283374552e0ec0be.setIcon(custom_icon_3a7455f08469bde8ba7b8da5c5f85290);
+        
+    
+            marker_06557a23b3a3d764283374552e0ec0be.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Santo Domingo de los Tsachilas<br>
+                <b>Municipio:</b> Santo Domingo<br>
+                <b>Necesidad:</b> Artículos no alimentarios<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e26a404859f33c815c6525c37c87739a = L.marker(
+                [-0.234555734114348, -79.18475721468359],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_576d37031c65736316d5f464d547b4ac = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alimento.svg"});
+        marker_e26a404859f33c815c6525c37c87739a.setIcon(custom_icon_576d37031c65736316d5f464d547b4ac);
+        
+    
+            marker_e26a404859f33c815c6525c37c87739a.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Santo Domingo de los Tsachilas<br>
+                <b>Municipio:</b> Santo Domingo<br>
+                <b>Necesidad:</b> Alimentos<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e6689d8e7bc6c40f064e3605f28e7e6 = L.marker(
+                [-0.241776383814009, -79.17758919786723],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_98c21629018c3741031c1d2b07789740 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_transporte.svg"});
+        marker_6e6689d8e7bc6c40f064e3605f28e7e6.setIcon(custom_icon_98c21629018c3741031c1d2b07789740);
+        
+    
+            marker_6e6689d8e7bc6c40f064e3605f28e7e6.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Santo Domingo de los Tsachilas<br>
+                <b>Municipio:</b> Santo Domingo<br>
+                <b>Necesidad:</b> Transporte<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de76ca90f96a8555af2926ba2209adf6 = L.marker(
+                [-0.971842700787611, -80.71890408159422],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_dc814267135757c7fa9825fa3eb59d4a = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_no_alimentario.svg"});
+        marker_de76ca90f96a8555af2926ba2209adf6.setIcon(custom_icon_dc814267135757c7fa9825fa3eb59d4a);
+        
+    
+            marker_de76ca90f96a8555af2926ba2209adf6.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Manabi<br>
+                <b>Municipio:</b> Manta<br>
+                <b>Necesidad:</b> Artículos no alimentarios<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7dab20314bbc857cf22de50c5e68d3c = L.marker(
+                [-0.979031931227514, -80.72607064503703],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_e35f11fc8768312ea8bd21b4a9ecfb69 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alojamiento.svg"});
+        marker_a7dab20314bbc857cf22de50c5e68d3c.setIcon(custom_icon_e35f11fc8768312ea8bd21b4a9ecfb69);
+        
+    
+            marker_a7dab20314bbc857cf22de50c5e68d3c.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Manabi<br>
+                <b>Municipio:</b> Manta<br>
+                <b>Necesidad:</b> Alojamiento<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ed0c685bd5e873302887e223f2df975 = L.marker(
+                [-0.971830459912654, -80.72605843172802],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_26058534a7fdaf5348bc3f2cb520fcf9 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alimento.svg"});
+        marker_8ed0c685bd5e873302887e223f2df975.setIcon(custom_icon_26058534a7fdaf5348bc3f2cb520fcf9);
+        
+    
+            marker_8ed0c685bd5e873302887e223f2df975.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Manabi<br>
+                <b>Municipio:</b> Manta<br>
+                <b>Necesidad:</b> Alimentos<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08178473da1db3d6fb4ad417d95bfa02 = L.marker(
+                [-0.979044262826857, -80.71891627984684],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_376093fd108ab647dffcfcf4d632a62f = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_salud.svg"});
+        marker_08178473da1db3d6fb4ad417d95bfa02.setIcon(custom_icon_376093fd108ab647dffcfcf4d632a62f);
+        
+    
+            marker_08178473da1db3d6fb4ad417d95bfa02.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Manabi<br>
+                <b>Municipio:</b> Manta<br>
+                <b>Necesidad:</b> Salud<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88edd5674e892e755861b1d0053ef5ca = L.marker(
+                [-3.487026404741144, -80.21600873703046],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_71a67f8270779dfef625b555419d42e1 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_proteccion.svg"});
+        marker_88edd5674e892e755861b1d0053ef5ca.setIcon(custom_icon_71a67f8270779dfef625b555419d42e1);
+        
+    
+            marker_88edd5674e892e755861b1d0053ef5ca.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> El Oro<br>
+                <b>Municipio:</b> Huaquillas<br>
+                <b>Necesidad:</b> Protección, asesoría y regularización<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5edc09554eb40173427fb605b41724e0 = L.marker(
+                [-3.486946117596005, -80.23037823813415],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_b5a618ce28b0d88995bcb0d214c51b69 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alojamiento.svg"});
+        marker_5edc09554eb40173427fb605b41724e0.setIcon(custom_icon_b5a618ce28b0d88995bcb0d214c51b69);
+        
+    
+            marker_5edc09554eb40173427fb605b41724e0.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> El Oro<br>
+                <b>Municipio:</b> Huaquillas<br>
+                <b>Necesidad:</b> Alojamiento<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8114e32c640c3655dbf94d8ddbcaf6e4 = L.marker(
+                [-3.4798067185383, -80.21596888314221],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_902cad7811420fbce1caf02fb911bffd = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_salud.svg"});
+        marker_8114e32c640c3655dbf94d8ddbcaf6e4.setIcon(custom_icon_902cad7811420fbce1caf02fb911bffd);
+        
+    
+            marker_8114e32c640c3655dbf94d8ddbcaf6e4.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> El Oro<br>
+                <b>Municipio:</b> Huaquillas<br>
+                <b>Necesidad:</b> Salud<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_500476952307aacef5d0979f97495ed4 = L.marker(
+                [-3.486986544162978, -80.2231477664486],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_47d458763c5fbc657f50996c6c5b71b3 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_transporte.svg"});
+        marker_500476952307aacef5d0979f97495ed4.setIcon(custom_icon_47d458763c5fbc657f50996c6c5b71b3);
+        
+    
+            marker_500476952307aacef5d0979f97495ed4.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> El Oro<br>
+                <b>Municipio:</b> Huaquillas<br>
+                <b>Necesidad:</b> Transporte<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b11d7adff617307a9b59a190d25d8ba = L.marker(
+                [-3.479812670261821, -80.22315387494584],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_e614087f9bd8e30dd74ef1b4e3a3858c = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_agua.svg"});
+        marker_8b11d7adff617307a9b59a190d25d8ba.setIcon(custom_icon_e614087f9bd8e30dd74ef1b4e3a3858c);
+        
+    
+            marker_8b11d7adff617307a9b59a190d25d8ba.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> El Oro<br>
+                <b>Municipio:</b> Huaquillas<br>
+                <b>Necesidad:</b> Agua, saneamiento e higiene<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b884584f25ed5c40c89a0721032ffa4 = L.marker(
+                [-3.479766961952075, -80.23031561722918],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_43ecd5594c608d9eebb19d96c37e1545 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alimento.svg"});
+        marker_1b884584f25ed5c40c89a0721032ffa4.setIcon(custom_icon_43ecd5594c608d9eebb19d96c37e1545);
+        
+    
+            marker_1b884584f25ed5c40c89a0721032ffa4.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> El Oro<br>
+                <b>Municipio:</b> Huaquillas<br>
+                <b>Necesidad:</b> Alimentos<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc03e0fe4467464eb840735506c3971e = L.marker(
+                [-3.260468084419818, -79.95361268728205],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_2bb459c454834454d256c503dd9f6408 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_proteccion.svg"});
+        marker_bc03e0fe4467464eb840735506c3971e.setIcon(custom_icon_2bb459c454834454d256c503dd9f6408);
+        
+    
+            marker_bc03e0fe4467464eb840735506c3971e.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> El Oro<br>
+                <b>Municipio:</b> Machala<br>
+                <b>Necesidad:</b> Protección, asesoría y regularización<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3705a6e9421a16eedb79793e167f18f = L.marker(
+                [-3.260432513187263, -79.96078654782985],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_41d6b602aa4e53e7ad8925886af8d8cd = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_salud.svg"});
+        marker_d3705a6e9421a16eedb79793e167f18f.setIcon(custom_icon_41d6b602aa4e53e7ad8925886af8d8cd);
+        
+    
+            marker_d3705a6e9421a16eedb79793e167f18f.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> El Oro<br>
+                <b>Municipio:</b> Machala<br>
+                <b>Necesidad:</b> Salud<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac75a0ec977c6cf391d88d78554b5ad3 = L.marker(
+                [-2.168817542925111, -79.89980006309914],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_e0f00711378646b24f24dfaf9c86759b = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_medio_vida.svg"});
+        marker_ac75a0ec977c6cf391d88d78554b5ad3.setIcon(custom_icon_e0f00711378646b24f24dfaf9c86759b);
+        
+    
+            marker_ac75a0ec977c6cf391d88d78554b5ad3.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Guayas<br>
+                <b>Municipio:</b> Guayaquil<br>
+                <b>Necesidad:</b> Medios de vida e integración<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e79e69317b8566f1f87bdfa537d82eb2 = L.marker(
+                [-2.168793626380146, -79.91415477788254],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_4915157033ea5a0b31944c88d82fb489 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_no_alimentario.svg"});
+        marker_e79e69317b8566f1f87bdfa537d82eb2.setIcon(custom_icon_4915157033ea5a0b31944c88d82fb489);
+        
+    
+            marker_e79e69317b8566f1f87bdfa537d82eb2.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Guayas<br>
+                <b>Municipio:</b> Guayaquil<br>
+                <b>Necesidad:</b> Artículos no alimentarios<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93d1a87e153a13538ea449f786effa02 = L.marker(
+                [-2.176063797388743, -79.89986920638192],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_aed1280cbba50268d9b4d8aa8a1c6f8e = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_salud.svg"});
+        marker_93d1a87e153a13538ea449f786effa02.setIcon(custom_icon_aed1280cbba50268d9b4d8aa8a1c6f8e);
+        
+    
+            marker_93d1a87e153a13538ea449f786effa02.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Guayas<br>
+                <b>Municipio:</b> Guayaquil<br>
+                <b>Necesidad:</b> Salud<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdde2ea3bfd71db5b425386022cb9da4 = L.marker(
+                [-2.16881705715643, -79.90699178825396],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_a03ca34e399571fcb9645139b96dc2c7 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_proteccion.svg"});
+        marker_cdde2ea3bfd71db5b425386022cb9da4.setIcon(custom_icon_a03ca34e399571fcb9645139b96dc2c7);
+        
+    
+            marker_cdde2ea3bfd71db5b425386022cb9da4.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Guayas<br>
+                <b>Municipio:</b> Guayaquil<br>
+                <b>Necesidad:</b> Protección, asesoría y regularización<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab5193412f362d25632a30589d8149e9 = L.marker(
+                [-2.176040266133183, -79.90704945730553],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_75a0a9268fae0d8d611b0ed88d40bc2a = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alimento.svg"});
+        marker_ab5193412f362d25632a30589d8149e9.setIcon(custom_icon_75a0a9268fae0d8d611b0ed88d40bc2a);
+        
+    
+            marker_ab5193412f362d25632a30589d8149e9.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Guayas<br>
+                <b>Municipio:</b> Guayaquil<br>
+                <b>Necesidad:</b> Alimentos<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_261d3d0a64c7289a1be0e17b3d811a97 = L.marker(
+                [-2.176016850963841, -79.91418389700259],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_95149b2b68b5af8e20803b3202d4878f = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alojamiento.svg"});
+        marker_261d3d0a64c7289a1be0e17b3d811a97.setIcon(custom_icon_95149b2b68b5af8e20803b3202d4878f);
+        
+    
+            marker_261d3d0a64c7289a1be0e17b3d811a97.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Ecuador<br>
+                <b>Departamento/Provincia:</b> Guayas<br>
+                <b>Municipio:</b> Guayaquil<br>
+                <b>Necesidad:</b> Alojamiento<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f7c06950c204e87a640cdb0316075fb = L.marker(
+                [-3.503519519721265, -80.27162338572947],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_177b70681b4fbdfd098ec771c3b672a3 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_agua.svg"});
+        marker_5f7c06950c204e87a640cdb0316075fb.setIcon(custom_icon_177b70681b4fbdfd098ec771c3b672a3);
+        
+    
+            marker_5f7c06950c204e87a640cdb0316075fb.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Tumbes<br>
+                <b>Municipio:</b> Zarumilla<br>
+                <b>Necesidad:</b> Agua, saneamiento e higiene<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ee77abfe43bc1e8d33cca658d1d5d8c = L.marker(
+                [-3.489105993138916, -80.27154266923634],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_a15c633ecfa9f9597ea3215b2d199ba3 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alimento.svg"});
+        marker_7ee77abfe43bc1e8d33cca658d1d5d8c.setIcon(custom_icon_a15c633ecfa9f9597ea3215b2d199ba3);
+        
+    
+            marker_7ee77abfe43bc1e8d33cca658d1d5d8c.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Tumbes<br>
+                <b>Municipio:</b> Zarumilla<br>
+                <b>Necesidad:</b> Alimentos<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80c18b7a982722944cd848bda4ff5f04 = L.marker(
+                [-3.496312757216781, -80.2715829856323],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_daffecaa6061ca42da97655a2499d262 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alojamiento.svg"});
+        marker_80c18b7a982722944cd848bda4ff5f04.setIcon(custom_icon_daffecaa6061ca42da97655a2499d262);
+        
+    
+            marker_80c18b7a982722944cd848bda4ff5f04.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Tumbes<br>
+                <b>Municipio:</b> Zarumilla<br>
+                <b>Necesidad:</b> Alojamiento<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c5d4c1e5d6aa675d74e15e74613abf0 = L.marker(
+                [-3.503478854992067, -80.27879544405982],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_c9bad7f57d06b29ab20bbc58a27a8916 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_proteccion.svg"});
+        marker_2c5d4c1e5d6aa675d74e15e74613abf0.setIcon(custom_icon_c9bad7f57d06b29ab20bbc58a27a8916);
+        
+    
+            marker_2c5d4c1e5d6aa675d74e15e74613abf0.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Tumbes<br>
+                <b>Municipio:</b> Zarumilla<br>
+                <b>Necesidad:</b> Protección, asesoría y regularización<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdf6fc578ad72fdbcc46a9c53757e472 = L.marker(
+                [-3.496272176335091, -80.27875498962122],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_56eb23624f002d784b8be8bf66fdd406 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_salud.svg"});
+        marker_cdf6fc578ad72fdbcc46a9c53757e472.setIcon(custom_icon_56eb23624f002d784b8be8bf66fdd406);
+        
+    
+            marker_cdf6fc578ad72fdbcc46a9c53757e472.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Tumbes<br>
+                <b>Municipio:</b> Zarumilla<br>
+                <b>Necesidad:</b> Salud<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7812744cdac54859ee653b78bc4f338 = L.marker(
+                [-3.489065496103519, -80.2787146189964],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_692290617f3b4116666bc84469762298 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_transporte.svg"});
+        marker_f7812744cdac54859ee653b78bc4f338.setIcon(custom_icon_692290617f3b4116666bc84469762298);
+        
+    
+            marker_f7812744cdac54859ee653b78bc4f338.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Tumbes<br>
+                <b>Municipio:</b> Zarumilla<br>
+                <b>Necesidad:</b> Transporte<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8aace10a57b4017813b574e4bf07da75 = L.marker(
+                [-3.560296885770701, -80.44838613207695],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_428079b4302b223a672dd7dae54ad3ba = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_agua.svg"});
+        marker_8aace10a57b4017813b574e4bf07da75.setIcon(custom_icon_428079b4302b223a672dd7dae54ad3ba);
+        
+    
+            marker_8aace10a57b4017813b574e4bf07da75.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Tumbes<br>
+                <b>Municipio:</b> Tumbes<br>
+                <b>Necesidad:</b> Agua, saneamiento e higiene<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69f7b7080fdfbec7c2cfd7e885a12d0f = L.marker(
+                [-3.553092231802228, -80.44834370223747],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_39d2db898285d231ffdc2eb197f18487 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alimento.svg"});
+        marker_69f7b7080fdfbec7c2cfd7e885a12d0f.setIcon(custom_icon_39d2db898285d231ffdc2eb197f18487);
+        
+    
+            marker_69f7b7080fdfbec7c2cfd7e885a12d0f.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Tumbes<br>
+                <b>Municipio:</b> Tumbes<br>
+                <b>Necesidad:</b> Alimentos<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a68907d12f20e847fe29c72f7d57156 = L.marker(
+                [-3.560339533734617, -80.44121564266517],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_675de108b72cf320f540e98d33ead205 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alojamiento.svg"});
+        marker_4a68907d12f20e847fe29c72f7d57156.setIcon(custom_icon_675de108b72cf320f540e98d33ead205);
+        
+    
+            marker_4a68907d12f20e847fe29c72f7d57156.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Tumbes<br>
+                <b>Municipio:</b> Tumbes<br>
+                <b>Necesidad:</b> Alojamiento<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c71d6315523a0311ad9c035922c18bbc = L.marker(
+                [-3.553134793250265, -80.44117326799304],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_1003a85355cdec8cdd1d9cb4966e93f4 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_proteccion.svg"});
+        marker_c71d6315523a0311ad9c035922c18bbc.setIcon(custom_icon_1003a85355cdec8cdd1d9cb4966e93f4);
+        
+    
+            marker_c71d6315523a0311ad9c035922c18bbc.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Tumbes<br>
+                <b>Municipio:</b> Tumbes<br>
+                <b>Necesidad:</b> Protección, asesoría y regularización<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_011e292b8fc69bca5d9a01c279ba3083 = L.marker(
+                [-3.560254182319415, -80.45555653499024],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_49485d67f95088cdeb9081849c93c085 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_salud.svg"});
+        marker_011e292b8fc69bca5d9a01c279ba3083.setIcon(custom_icon_49485d67f95088cdeb9081849c93c085);
+        
+    
+            marker_011e292b8fc69bca5d9a01c279ba3083.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Tumbes<br>
+                <b>Municipio:</b> Tumbes<br>
+                <b>Necesidad:</b> Salud<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_836d3cb6e14e24cf516240ff13da9c8f = L.marker(
+                [-3.553049614979373, -80.4555140499867],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_24d0ef4c7416ee85076ee678b5248eca = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_transporte.svg"});
+        marker_836d3cb6e14e24cf516240ff13da9c8f.setIcon(custom_icon_24d0ef4c7416ee85076ee678b5248eca);
+        
+    
+            marker_836d3cb6e14e24cf516240ff13da9c8f.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Tumbes<br>
+                <b>Municipio:</b> Tumbes<br>
+                <b>Necesidad:</b> Transporte<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64ea09cd654d8ba1868be05804b7ddec = L.marker(
+                [-4.583690740392244, -81.26161780010557],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_24ce46a5c6f3efc24b0b6c9d7a00ff53 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_agua.svg"});
+        marker_64ea09cd654d8ba1868be05804b7ddec.setIcon(custom_icon_24ce46a5c6f3efc24b0b6c9d7a00ff53);
+        
+    
+            marker_64ea09cd654d8ba1868be05804b7ddec.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Piura<br>
+                <b>Municipio:</b> Talara<br>
+                <b>Necesidad:</b> Agua, saneamiento e higiene<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8a4dc493057c524bb488058920862e6 = L.marker(
+                [-4.576484565229832, -81.26155487639532],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_4723c445775db857bcbec247ab322843 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alimento.svg"});
+        marker_a8a4dc493057c524bb488058920862e6.setIcon(custom_icon_4723c445775db857bcbec247ab322843);
+        
+    
+            marker_a8a4dc493057c524bb488058920862e6.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Piura<br>
+                <b>Municipio:</b> Talara<br>
+                <b>Necesidad:</b> Alimentos<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ba60190f29f6cf7c7967148daa1777a = L.marker(
+                [-4.583612481170115, -81.26876833025436],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_e0f06f701c78fb6503dd2e4450339e47 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_proteccion.svg"});
+        marker_2ba60190f29f6cf7c7967148daa1777a.setIcon(custom_icon_e0f06f701c78fb6503dd2e4450339e47);
+        
+    
+            marker_2ba60190f29f6cf7c7967148daa1777a.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Piura<br>
+                <b>Municipio:</b> Talara<br>
+                <b>Necesidad:</b> Protección, asesoría y regularización<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f257be1c34455c84fb8e715af4c1598 = L.marker(
+                [-4.57642539569153, -81.2687207494599],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_e107aacbb5f4e7ec96cd06ae09928e15 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_transporte.svg"});
+        marker_4f257be1c34455c84fb8e715af4c1598.setIcon(custom_icon_e107aacbb5f4e7ec96cd06ae09928e15);
+        
+    
+            marker_4f257be1c34455c84fb8e715af4c1598.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Piura<br>
+                <b>Municipio:</b> Talara<br>
+                <b>Necesidad:</b> Transporte<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43943ba41dd7de007a4a712be5f118e1 = L.marker(
+                [-5.196616187502369, -80.61348412300462],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_87bcef0d3d6651493a7831d92750ff63 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_agua.svg"});
+        marker_43943ba41dd7de007a4a712be5f118e1.setIcon(custom_icon_87bcef0d3d6651493a7831d92750ff63);
+        
+    
+            marker_43943ba41dd7de007a4a712be5f118e1.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Piura<br>
+                <b>Municipio:</b> Piura<br>
+                <b>Necesidad:</b> Agua, saneamiento e higiene<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_507e028e537be5afb737870e8c183718 = L.marker(
+                [-5.189285642555722, -80.62778791408326],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_2ae9525208752b332d63aebf7021440e = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alimento.svg"});
+        marker_507e028e537be5afb737870e8c183718.setIcon(custom_icon_2ae9525208752b332d63aebf7021440e);
+        
+    
+            marker_507e028e537be5afb737870e8c183718.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Piura<br>
+                <b>Municipio:</b> Piura<br>
+                <b>Necesidad:</b> Alimentos<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43bffc587eda7aa4b502eb4e15f7f39a = L.marker(
+                [-5.189413869115783, -80.61342020908104],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_c787dc8471584be552e8d40817e45073 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_alojamiento.svg"});
+        marker_43bffc587eda7aa4b502eb4e15f7f39a.setIcon(custom_icon_c787dc8471584be552e8d40817e45073);
+        
+    
+            marker_43bffc587eda7aa4b502eb4e15f7f39a.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Piura<br>
+                <b>Municipio:</b> Piura<br>
+                <b>Necesidad:</b> Alojamiento<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18ea665429925907440261de49dc22ea = L.marker(
+                [-5.189349796284503, -80.62060410656342],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_240bf054703f4646583c15dd7a9f4135 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_proteccion.svg"});
+        marker_18ea665429925907440261de49dc22ea.setIcon(custom_icon_240bf054703f4646583c15dd7a9f4135);
+        
+    
+            marker_18ea665429925907440261de49dc22ea.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Piura<br>
+                <b>Municipio:</b> Piura<br>
+                <b>Necesidad:</b> Protección, asesoría y regularización<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f80b3a7955694b37d6654cfc9fdf704 = L.marker(
+                [-5.196552025275523, -80.62066810123075],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_dfbf86ff4ed5b9a6564c8f556ec0f89b = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_salud.svg"});
+        marker_0f80b3a7955694b37d6654cfc9fdf704.setIcon(custom_icon_dfbf86ff4ed5b9a6564c8f556ec0f89b);
+        
+    
+            marker_0f80b3a7955694b37d6654cfc9fdf704.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Piura<br>
+                <b>Municipio:</b> Piura<br>
+                <b>Necesidad:</b> Salud<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a19b6e02f30f7e48359b5ad2c4b5bdc = L.marker(
+                [-5.196487782038324, -80.6278519894893],
+                {"embed": false}
+            ).addTo(marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3);
+        
+    
+        var custom_icon_41521c9f38eb6327e7613708979d2230 = L.icon({"iconSize": [40, 40], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/icon_transporte.svg"});
+        marker_9a19b6e02f30f7e48359b5ad2c4b5bdc.setIcon(custom_icon_41521c9f38eb6327e7613708979d2230);
+        
+    
+            marker_9a19b6e02f30f7e48359b5ad2c4b5bdc.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>País:</b> Perú<br>
+                <b>Departamento/Provincia:</b> Piura<br>
+                <b>Municipio:</b> Piura<br>
+                <b>Necesidad:</b> Transporte<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            geo_json_b25acba5bd5aa7751a32cef506ba6104.addTo(feature_group_3352c6df4d4aaee1283045f8a3cd6f4e);
+        
+    
+            var feature_group_9a5bd98c7af88130a883465870480e66 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_6aea5e37101af52c896b6840d48736d1 = L.marker(
+                [0.752, -78.064],
+                {"autoPan": true, "draggable": true}
+            ).addTo(feature_group_9a5bd98c7af88130a883465870480e66);
+        
+    
+            var div_icon_43ff7de310bdb1e15744760f69f7f2ec = L.divIcon({"className": "empty", "html": "\u003cdiv\n                   style=\u0027font-size: 8pt;\n                   font-weight: regular;\n                   color: white;\n                   text-shadow:\n                    1px 1px 4px #000,\n                    -1px 1px 4px #000,\n                    -1px -1px 4px #000,\n                    1px -1px 4px #000\u0027;\n                   \u003eCarchi\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [85, 36]});
+            marker_6aea5e37101af52c896b6840d48736d1.setIcon(div_icon_43ff7de310bdb1e15744760f69f7f2ec);
+        
+    
+            var marker_cb371839bf66f16ee49b780b0bb87184 = L.marker(
+                [-3.509, -79.833],
+                {"autoPan": true, "draggable": true}
+            ).addTo(feature_group_9a5bd98c7af88130a883465870480e66);
+        
+    
+            var div_icon_cc6a79bbae94de29f98f0679871dc1d8 = L.divIcon({"className": "empty", "html": "\u003cdiv\n                   style=\u0027font-size: 8pt;\n                   font-weight: regular;\n                   color: white;\n                   text-shadow:\n                    1px 1px 4px #000,\n                    -1px 1px 4px #000,\n                    -1px -1px 4px #000,\n                    1px -1px 4px #000\u0027;\n                   \u003eEl Oro\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [85, 36]});
+            marker_cb371839bf66f16ee49b780b0bb87184.setIcon(div_icon_cc6a79bbae94de29f98f0679871dc1d8);
+        
+    
+            var marker_4708a6f5f25cd871002b14f43f5f2969 = L.marker(
+                [-2.117, -79.889],
+                {"autoPan": true, "draggable": true}
+            ).addTo(feature_group_9a5bd98c7af88130a883465870480e66);
+        
+    
+            var div_icon_40ecbf47e72b101b87fb9395aaac2378 = L.divIcon({"className": "empty", "html": "\u003cdiv\n                   style=\u0027font-size: 8pt;\n                   font-weight: regular;\n                   color: white;\n                   text-shadow:\n                    1px 1px 4px #000,\n                    -1px 1px 4px #000,\n                    -1px -1px 4px #000,\n                    1px -1px 4px #000\u0027;\n                   \u003eGuayas\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [85, 36]});
+            marker_4708a6f5f25cd871002b14f43f5f2969.setIcon(div_icon_40ecbf47e72b101b87fb9395aaac2378);
+        
+    
+            var marker_5affe402d68f6920f779f6c00635c0c8 = L.marker(
+                [0.366, -78.672],
+                {"autoPan": true, "draggable": true}
+            ).addTo(feature_group_9a5bd98c7af88130a883465870480e66);
+        
+    
+            var div_icon_dee6b9d72aa5f4248a16b1de077c4534 = L.divIcon({"className": "empty", "html": "\u003cdiv\n                   style=\u0027font-size: 8pt;\n                   font-weight: regular;\n                   color: white;\n                   text-shadow:\n                    1px 1px 4px #000,\n                    -1px 1px 4px #000,\n                    -1px -1px 4px #000,\n                    1px -1px 4px #000\u0027;\n                   \u003eImbabura\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [85, 36]});
+            marker_5affe402d68f6920f779f6c00635c0c8.setIcon(div_icon_dee6b9d72aa5f4248a16b1de077c4534);
+        
+    
+            var marker_4848885ada1c46651cad4bc427865835 = L.marker(
+                [-0.751, -80.137],
+                {"autoPan": true, "draggable": true}
+            ).addTo(feature_group_9a5bd98c7af88130a883465870480e66);
+        
+    
+            var div_icon_381fd0749715d03009386571d936c947 = L.divIcon({"className": "empty", "html": "\u003cdiv\n                   style=\u0027font-size: 8pt;\n                   font-weight: regular;\n                   color: white;\n                   text-shadow:\n                    1px 1px 4px #000,\n                    -1px 1px 4px #000,\n                    -1px -1px 4px #000,\n                    1px -1px 4px #000\u0027;\n                   \u003eManabi\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [85, 36]});
+            marker_4848885ada1c46651cad4bc427865835.setIcon(div_icon_381fd0749715d03009386571d936c947);
+        
+    
+            var marker_39cf7371d35d842820bb22f4ee7d0be0 = L.marker(
+                [0.011, -78.692],
+                {"autoPan": true, "draggable": true}
+            ).addTo(feature_group_9a5bd98c7af88130a883465870480e66);
+        
+    
+            var div_icon_b8eafd285a1c9af582cc81eed74d01d8 = L.divIcon({"className": "empty", "html": "\u003cdiv\n                   style=\u0027font-size: 8pt;\n                   font-weight: regular;\n                   color: white;\n                   text-shadow:\n                    1px 1px 4px #000,\n                    -1px 1px 4px #000,\n                    -1px -1px 4px #000,\n                    1px -1px 4px #000\u0027;\n                   \u003ePichincha\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [85, 36]});
+            marker_39cf7371d35d842820bb22f4ee7d0be0.setIcon(div_icon_b8eafd285a1c9af582cc81eed74d01d8);
+        
+    
+            var marker_cfee16513c1570c4b82b90f65fcc1e84 = L.marker(
+                [-0.284, -79.2],
+                {"autoPan": true, "draggable": true}
+            ).addTo(feature_group_9a5bd98c7af88130a883465870480e66);
+        
+    
+            var div_icon_a1868e8f46c816219189b344240f356d = L.divIcon({"className": "empty", "html": "\u003cdiv\n                   style=\u0027font-size: 8pt;\n                   font-weight: regular;\n                   color: white;\n                   text-shadow:\n                    1px 1px 4px #000,\n                    -1px 1px 4px #000,\n                    -1px -1px 4px #000,\n                    1px -1px 4px #000\u0027;\n                   \u003eSanto Domingo de los Tsachilas\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [85, 36]});
+            marker_cfee16513c1570c4b82b90f65fcc1e84.setIcon(div_icon_a1868e8f46c816219189b344240f356d);
+        
+    
+            var marker_840e46471bd66828f42a9e94d84a5677 = L.marker(
+                [-7.921, -78.368],
+                {"autoPan": true, "draggable": true}
+            ).addTo(feature_group_9a5bd98c7af88130a883465870480e66);
+        
+    
+            var div_icon_6ab4537776fcf564abe78cdaab4fcd44 = L.divIcon({"className": "empty", "html": "\u003cdiv\n                   style=\u0027font-size: 8pt;\n                   font-weight: regular;\n                   color: white;\n                   text-shadow:\n                    1px 1px 4px #000,\n                    -1px 1px 4px #000,\n                    -1px -1px 4px #000,\n                    1px -1px 4px #000\u0027;\n                   \u003eLa Libertad\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [85, 36]});
+            marker_840e46471bd66828f42a9e94d84a5677.setIcon(div_icon_6ab4537776fcf564abe78cdaab4fcd44);
+        
+    
+            var marker_bf35efbcc5bb1f3624431f7731c3d398 = L.marker(
+                [-6.341, -79.827],
+                {"autoPan": true, "draggable": true}
+            ).addTo(feature_group_9a5bd98c7af88130a883465870480e66);
+        
+    
+            var div_icon_7f7163ed9007dbe86bc15faacaf52c8b = L.divIcon({"className": "empty", "html": "\u003cdiv\n                   style=\u0027font-size: 8pt;\n                   font-weight: regular;\n                   color: white;\n                   text-shadow:\n                    1px 1px 4px #000,\n                    -1px 1px 4px #000,\n                    -1px -1px 4px #000,\n                    1px -1px 4px #000\u0027;\n                   \u003eLambayeque\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [85, 36]});
+            marker_bf35efbcc5bb1f3624431f7731c3d398.setIcon(div_icon_7f7163ed9007dbe86bc15faacaf52c8b);
+        
+    
+            var marker_94b61276a132e4e0303aae39a614f0d1 = L.marker(
+                [-5.128, -80.336],
+                {"autoPan": true, "draggable": true}
+            ).addTo(feature_group_9a5bd98c7af88130a883465870480e66);
+        
+    
+            var div_icon_afbf22d45357c3aabeee7e4c14f94f4a = L.divIcon({"className": "empty", "html": "\u003cdiv\n                   style=\u0027font-size: 8pt;\n                   font-weight: regular;\n                   color: white;\n                   text-shadow:\n                    1px 1px 4px #000,\n                    -1px 1px 4px #000,\n                    -1px -1px 4px #000,\n                    1px -1px 4px #000\u0027;\n                   \u003ePiura\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [85, 36]});
+            marker_94b61276a132e4e0303aae39a614f0d1.setIcon(div_icon_afbf22d45357c3aabeee7e4c14f94f4a);
+        
+    
+            var marker_ed0a35e8b6f0655cbb7447e2eacd56d7 = L.marker(
+                [-3.856, -80.545],
+                {"autoPan": true, "draggable": true}
+            ).addTo(feature_group_9a5bd98c7af88130a883465870480e66);
+        
+    
+            var div_icon_2d81de8733e7cf7c449a794e290c1e3b = L.divIcon({"className": "empty", "html": "\u003cdiv\n                   style=\u0027font-size: 8pt;\n                   font-weight: regular;\n                   color: white;\n                   text-shadow:\n                    1px 1px 4px #000,\n                    -1px 1px 4px #000,\n                    -1px -1px 4px #000,\n                    1px -1px 4px #000\u0027;\n                   \u003eTumbes\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [85, 36]});
+            marker_ed0a35e8b6f0655cbb7447e2eacd56d7.setIcon(div_icon_2d81de8733e7cf7c449a794e290c1e3b);
+        
+    
+            feature_group_9a5bd98c7af88130a883465870480e66.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            var feature_group_32daed240c422feba30304f4e4e93350 = L.featureGroup(
+                {"maxZoom": 12, "minZoom": 7, "showCoverageOnHover": false}
+            );
+        
+    
+            var marker_380cd076c53e1ab25766e11b6b33b25d = L.marker(
+                [-0.348127355546816, -79.95821348135885],
+                {"embed": false, "maxZoom": 12, "minZoom": 7}
+            ).addTo(feature_group_32daed240c422feba30304f4e4e93350);
+        
+    
+        var custom_icon_02ccfdc678f2c0958bfc3c12604f2976 = L.icon({"iconSize": ["66", " 35"], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/flujo_ecu_1.svg"});
+        marker_380cd076c53e1ab25766e11b6b33b25d.setIcon(custom_icon_02ccfdc678f2c0958bfc3c12604f2976);
+        
+    
+            marker_380cd076c53e1ab25766e11b6b33b25d.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>Sentido:</b> Norte->Sur<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43f9c8258cc164824a107d89db78ab19 = L.marker(
+                [-2.64652038, -79.77028656],
+                {"embed": false, "maxZoom": 12, "minZoom": 7}
+            ).addTo(feature_group_32daed240c422feba30304f4e4e93350);
+        
+    
+        var custom_icon_9e9193ed6b526d49fc0cf878c2419d44 = L.icon({"iconSize": ["22", " 66"], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/flujo_ecu_2.svg"});
+        marker_43f9c8258cc164824a107d89db78ab19.setIcon(custom_icon_9e9193ed6b526d49fc0cf878c2419d44);
+        
+    
+            marker_43f9c8258cc164824a107d89db78ab19.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>Sentido:</b> Sur->Norte<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8447d1e92adca925a2343c907002d64d = L.marker(
+                [-7.522111527923194, -79.18943944930979],
+                {"embed": false, "maxZoom": 12, "minZoom": 7}
+            ).addTo(feature_group_32daed240c422feba30304f4e4e93350);
+        
+    
+        var custom_icon_4903106e533133d19c3d788a15b61797 = L.icon({"iconSize": ["105", " 65"], "iconUrl": "https://raw.githubusercontent.com/mautamos89/mapa_web_calp/main/img/flujo_per_2.svg"});
+        marker_8447d1e92adca925a2343c907002d64d.setIcon(custom_icon_4903106e533133d19c3d788a15b61797);
+        
+    
+            marker_8447d1e92adca925a2343c907002d64d.bindTooltip(
+                `<div>
+                     
+            <div style="font-family: Arial; font-size: 11px;">
+                <b>Sentido:</b> Norte->Sur<br>
+            </div>
+            
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            feature_group_32daed240c422feba30304f4e4e93350.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            var mouse_position_9d274ec2f3fca0ca31662583abb6eb57 = new L.Control.MousePosition(
+                {"emptyString": "Coordenadas", "lngFirst": false, "numDigits": 5, "position": "bottomright", "prefix": "Latitud:", "separator": " | Longitud: "}
+            );
+            mouse_position_9d274ec2f3fca0ca31662583abb6eb57.options["latFormatter"] =
+                function(num) {return L.Util.formatNum(num, 3) + 'º ';};;
+            mouse_position_9d274ec2f3fca0ca31662583abb6eb57.options["lngFormatter"] =
+                function(num) {return L.Util.formatNum(num, 3) + 'º ';};;
+            map_8b91f3a83de40f8bb44c928e7cfcfd4b.addControl(mouse_position_9d274ec2f3fca0ca31662583abb6eb57);
+        
+    
+            var feature_group_3352c6df4d4aaee1283045f8a3cd6f4esearchControl = new L.Control.Search({
+                layer: feature_group_3352c6df4d4aaee1283045f8a3cd6f4e,
+                
+                propertyName: 'clave',
+                
+                collapsed: true,
+                textPlaceholder: 'Departamento / Provincia',
+                position:'topleft',
+            
+                marker: false,
+                moveToLocation: function(latlng, title, map) {
+                var zoom =  map.getBoundsZoom(latlng.layer.getBounds()) 
+                    map.flyTo(latlng, zoom); // access the zoom
+                }
+            
+                });
+                feature_group_3352c6df4d4aaee1283045f8a3cd6f4esearchControl.on('search:locationfound', function(e) {
+                    feature_group_3352c6df4d4aaee1283045f8a3cd6f4e.setStyle(function(feature){
+                        return feature.properties.style
+                    })
+                    
+                    e.layer.setStyle({"forceSeparateButton": false});
+                    
+                    if(e.layer._popup)
+                        e.layer.openPopup();
+                })
+                feature_group_3352c6df4d4aaee1283045f8a3cd6f4esearchControl.on('search:collapsed', function(e) {
+                        feature_group_3352c6df4d4aaee1283045f8a3cd6f4e.setStyle(function(feature){
+                            return feature.properties.style
+                    });
+                });
+            map_8b91f3a83de40f8bb44c928e7cfcfd4b.addControl( feature_group_3352c6df4d4aaee1283045f8a3cd6f4esearchControl );
+
+        
+    
+            var tile_layer_3406f62acc28220aae80f0b6653d53a8 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+            var mini_map_0b9bf104de1406b62c554c3d7f681294 = new L.Control.MiniMap(
+                tile_layer_3406f62acc28220aae80f0b6653d53a8,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": true, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_8b91f3a83de40f8bb44c928e7cfcfd4b.addControl(mini_map_0b9bf104de1406b62c554c3d7f681294);
+        
+    
+            var tag_filter_button_a9a0b9ebfd53c7280f05fa0f5c21c766 = L.control.tagFilterButton(
+                {"clearText": "Borrar filtro", "data": ["A:Tulc\u00e1n-Ibarra", "B:Ibarra-Quito", "C:Quito-Manta", "D:Manta", "E:Huaquillas-Guayaquil", "F:Guayaquil", "G:Aguas Verdes-Tumbes", "H:Tumbes-Piura", "I:Piura-Chiclayo", "J:Chiclayo-Trujillo"], "filterOnEveryClick": true, "icon": "\u003ci class=\"fa fa-filter\"\u003e\u003c/i\u003e", "openPopupOnHover": true}
+            ).addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+        L.easyButton(
+            '<span><i class="fa fa-info" aria-hidden="true"></i></span>',
+            
+    function(btn, map) {
+        var macro = document.getElementById('mapinfo');
+        if (macro.style.display === 'none') {
+            macro.style.display = 'block';
+        } else {
+            macro.style.display = 'none';
+        }
+    }
+    
+        ).addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            map_8b91f3a83de40f8bb44c928e7cfcfd4b.fitBounds(
+                [[-8.969366, -81.33069610599989], [1.197939635000068, -76.89923858599985]],
+                {}
+            );
+        
+    
+
+            L.control.groupedLayers(
+                null,
+                {
+                    "Capa tem\u00e1tica" : {
+                        "Ruta identificada [10]" : geo_json_912be736a75ae022108c3776c0183e2c,
+                        "Flujo migratorio [3]" : feature_group_32daed240c422feba30304f4e4e93350,
+                        "Necesidad por tramo [66]" : marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3,
+                        "Paso fronterizo [4]" : feature_group_1bffc180e658f1a3d3849eb1ef19118c,
+                        "Nivel de riesgo [11]" : geo_json_b25acba5bd5aa7751a32cef506ba6104,
+                    },
+                    "Etiqueta de capa" : {
+                        "Departamento / Provincia" : feature_group_9a5bd98c7af88130a883465870480e66,
+                    },
+                    "Mapa base" : {
+                        "CartoDB Positron" : tile_layer_de12234e26f8158b45e4be249cdafaf7,
+                        "OpenStreetMap" : tile_layer_abef4fcb364b16c791f7ff1df1fc14bd,
+                        "Esri Sat\u00e9lite" : tile_layer_252775bfaeab4229a275c7cbc5940e97,
+                        "Google H\u00edbrido" : tile_layer_0087f04c550b28599ba8dc8a263cf6a7,
+                    },
+                },
+                {"autoZIndex": true, "collapsed": true, "draggable": true},
+            ).addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+            tile_layer_252775bfaeab4229a275c7cbc5940e97.remove();
+            tile_layer_0087f04c550b28599ba8dc8a263cf6a7.remove();
+            tile_layer_abef4fcb364b16c791f7ff1df1fc14bd.remove();
+
+        
+    
+            tile_layer_de12234e26f8158b45e4be249cdafaf7.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            geo_json_b25acba5bd5aa7751a32cef506ba6104.addTo(feature_group_3352c6df4d4aaee1283045f8a3cd6f4e);
+        
+    
+            feature_group_3352c6df4d4aaee1283045f8a3cd6f4e.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            geo_json_912be736a75ae022108c3776c0183e2c.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            feature_group_1bffc180e658f1a3d3849eb1ef19118c.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            marker_cluster_34b3a7e8eff3512c2c9dc1521e888de3.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            geo_json_b25acba5bd5aa7751a32cef506ba6104.addTo(feature_group_3352c6df4d4aaee1283045f8a3cd6f4e);
+        
+    
+            feature_group_9a5bd98c7af88130a883465870480e66.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+    
+            feature_group_32daed240c422feba30304f4e4e93350.addTo(map_8b91f3a83de40f8bb44c928e7cfcfd4b);
+        
+</script>
+</html>
